@@ -4,7 +4,8 @@ while i < len(my_list):
     print(my_list[i])
     i += 1
     if my_list[i] == 0:
-        my_list.remove(0)
+        i += 1
+        continue
     elif my_list[i] >= 0:
         continue
     else:
